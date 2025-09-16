@@ -40,7 +40,7 @@ def parse_http_config(rc4_key: bytes, data: bytes) -> dict:
         servers.append(read_str(host_length).strip("\x00"))
         ports.append(read("<I"))
 
-    config["servers"] = servers
+    config["CNCs"] = servers
     config["ports"] = ports
     method_length = read("<I")
     config["http_method"] = read_str(method_length).strip("\x00")
