@@ -11,7 +11,7 @@ def test_adaptixbeacon():
                 "cryptokey_type": "RC4",
                 "agent_type": "BE4C0149",
                 "use_ssl": 1,
-                "servers": ["689535ed-3.b-cdn.net"],
+                "CNCs": ["689535ed-3.b-cdn.net"],
                 "ports": [443],
                 "http_method": "POST",
                 "uri": "/amazon/Trust/disputes/press-requests.php",
